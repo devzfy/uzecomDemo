@@ -1,0 +1,151 @@
+@media screen and (max-width: 500px) {
+    .page_header{
+        padding: 13px 0 12px 0px;
+        .header_inner{
+            .dropdawn_place{
+                .for_men{
+                    display: none;
+                }
+
+                .logo_place{
+                    margin-left: 0;
+                    .logo{
+                        img{
+                            width: 92px;
+                            height: 19px;
+                            object-fit: contain;
+                        }
+                }
+                }
+            }
+            .mini_place{
+                .connect_place{
+                    position: relative;
+                    .bla_bla{
+                        display: none;
+                    }
+                    li{
+                        margin: 0 8px;
+                    }
+                    
+                    .korzinka{
+                        width: 22px;
+                        height: 22px;
+                        .korzinka_img{
+                            width: 11px;
+                            height: 11px;
+                            object-fit: contain;
+                        }
+                    }
+
+                        .user{
+                            width: 22px;
+                            height: 22px;
+                            .korzinka_img {
+                                width: 11px;
+                                height: 11px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        .avatar_place {
+                            position: relative;
+
+                            .open_drop {
+                                width: 145px;
+                                left: -90px;
+                                top: 35px;
+                                .avatare {
+                                    padding: 5px 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    background-color: #E9E4E4;
+                                    img{
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+
+                                    a {
+                                        margin-left: 11px;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 10px;
+                                        line-height: 17px;
+                                        color: #565656;
+                                    }
+                                }
+
+                                .li_item {
+                                    display: block;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                    line-height: 17px;
+                                    color: #565656;
+                                    margin-top: 5px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+
+                        .humberger{
+                            display: block;
+
+                            .main_humb{
+                                background-color: #fff;
+                                padding: 0;
+                                box-sizing: border-box;
+                                border-bottom-left-radius: 10px;
+                                border-top-left-radius: 10px;
+                                position: absolute;
+                                z-index: 100;
+                                right: -15px;
+                                width: 0;
+                                overflow: hidden;
+                                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                                transition: 0.3s;
+                                &.active{
+                                    width: 130px;
+                                    overflow: visible;
+                                    padding: 5px 10px 10px 10px;
+                                }
+                                .humb_men{
+                                    .open_humb{
+                                        .humb_name{
+                                            font-family: Montserrat;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 12px;
+                                            text-align: center;
+                                            color: #003466;
+                                        }
+                                    }
+
+                                    .opened_humb{
+                                        padding-left: 10px;
+                                        .humb_item{
+                                            display: block;
+                                            font-family: Montserrat;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 12px;
+                                            text-align: left;
+                                            color: #000;
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

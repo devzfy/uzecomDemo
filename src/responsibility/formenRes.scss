@@ -1,0 +1,295 @@
+@media screen and (max-width:500px) {
+    .for_men {
+        .top_banner {
+            padding: 30px 0 ;
+            background-size: cover;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .banner_name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 23px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+
+            .banner_link {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+        }
+
+        .page_name {
+            margin: 82px 0 26px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 33px;
+                text-align: center;
+                color: #000000;
+            }
+
+            .open_filter{
+                display: flex;
+                align-items: center;
+                border: 0.77px solid #565656;
+                padding: 5px 12px;
+                img{
+                    margin-right: 5px;
+                }
+                span{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #565656;
+                }
+            }
+        }
+
+        .page_products_filters {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .filter {
+            width: 0;
+            background-color: #fff;
+            z-index: 100;
+            right: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            padding: 0;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: 0.2s;
+            &.active{
+                width: 80%;
+                padding: 43px 0 35px 0;
+                overflow: visible;
+            }
+
+            .input {
+                position: relative;
+                width: 100%;
+                margin-bottom: 20px;
+                display: none;
+
+                .search_img {
+                    width: 15px;
+                    height: 16px;
+                    object-fit: contain;
+                    position: absolute;
+                    right: 17px;
+                    z-index: 10;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 16px 0 16px 16px;
+                    box-sizing: border-box;
+                    background: #EBEBEB;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            .sort {
+                margin-bottom: 20px;
+                width: 100%;
+
+                select {
+                    width: 100%;
+                    padding: 16px 0 16px 16px;
+                    box-sizing: border-box;
+                    background: #EBEBEB;
+                    border: none;
+                    outline: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+            }
+
+            .sort_by {
+                background: #F5F0F0;
+                padding: 27px 20px;
+                box-sizing: border-box;
+                width: 100%;
+                margin-bottom: 20px;
+
+                .for_mens {
+                    .name {
+                        padding-bottom: 6px;
+                        padding-top: 6px;
+                        border-bottom: 1px solid #DAD3D3;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h3 {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 130%;
+                            color: #000000;
+                        }
+                    }
+
+                    .open_sort {
+                        height: 0;
+                        overflow: hidden;
+                        padding: 0;
+
+                        .sort_name {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 130%;
+                            color: #000000;
+                            display: block;
+                            padding-bottom: 10px;
+                        }
+
+                        &.active {
+                            padding: 10px 0 10px 10px;
+                            height: 100%;
+                            overflow: visible;
+                        }
+                    }
+                }
+            }
+
+            .filter_size {
+                .name {
+                    h1 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 100%;
+                        color: #000000;
+                        padding-bottom: 15px;
+                    }
+
+                    hr {
+                        background-color: #000;
+                    }
+
+                    margin-bottom: 15px;
+                }
+
+                .radio_btns {
+                    input[type=radio] {
+                        border: 1px solid #666;
+                        padding: 0.5em;
+                        -webkit-appearance: none;
+                    }
+
+                    input[type=radio]:checked {
+                        background-color: #000;
+                        background-size: 10px 10px contain;
+                    }
+
+                    input[type=radio]:focus {
+                        outline-color: transparent;
+                    }
+
+                    li {
+                        margin-bottom: 14px;
+
+                        span {
+                            padding-left: 10px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+
+            .diapazon_price {
+                .name {
+                    h1 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 100%;
+                        color: #000000;
+                        padding-bottom: 15px;
+                    }
+
+                    hr {
+                        background-color: #000;
+                    }
+
+                    margin-bottom: 15px;
+                }
+            }
+
+            .buttons_del_fil {
+                margin-top: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                button {
+                    width: 48%;
+                    padding: 10px 0;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+
+                    &.delete_btn {
+                        background-color: #fe9e0d;
+                    }
+
+                    &.filter_btn {
+                        background-color: #003466;
+                    }
+                }
+            }
+        }
+
+        .products {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 70px;
+
+            .block_one {
+                margin-bottom: 20px;
+                width: 49%;
+
+                &.mb_bot {
+                    margin-bottom: 110px;
+                }
+            }
+        }
+    }
+
+}

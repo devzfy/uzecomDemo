@@ -1,0 +1,233 @@
+
+@mixin display_wra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin display_aro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-page{
+    margin: 0 auto;
+    .bane_img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .slick-slider {
+        .slick-arrow {
+            width: 59px;
+            height: 59px;
+            background-color: rgba(255, 255, 255, 0.493);
+            border-radius: 50%;
+            position: relative;
+
+            &::before {
+                top: 11px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                background-image: url('../../assets/icons/right-arrow.svg');
+                width: 60%;
+                height: 70%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &.slick-prev {
+                position: absolute;
+                left: 38px;
+                z-index: 10;
+                transform: rotate(180deg);
+            }
+
+            &.slick-next {
+                position: absolute;
+                right: 38px;
+            }
+        }
+    }
+}
+
+.brends{
+    margin: 60px 0 106px 0;
+    .slick-slider {
+        .slick-list{
+            max-width: 1000px;
+            margin:  0 auto;
+        }
+        .slick-arrow {
+            position: relative;
+            width: 33px;
+            height: 50px;
+            &::before {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                content: '';
+                background-image: url('../../assets/icons/brend_arr.svg');
+                width: 100%;
+                height: 100%;
+                top: 0 !important;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+            }
+
+            &.slick-prev {
+                position: absolute;
+                left: 0;
+                z-index: 10;
+                transform: rotate(180deg);
+                &::before{
+                    top: 45px !important;
+                }
+            }
+
+            &.slick-next {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .brend_logo{
+        text-align: center;
+        img{
+            margin: 0 auto !important;
+        }
+        .brend_name{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 27px;
+            color: #000000;
+            margin-top: 10px;
+            display: block;
+        }
+    }
+    .place_name{
+        margin-bottom: 50px;
+        h1{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            line-height: 54px;
+            color: #000000;
+            text-align: center;
+        }
+    }
+}
+
+.new_collection{
+    .place_name{
+        h1{
+             font-style: normal;
+             font-weight: normal;
+             font-size: 44px;
+             line-height: 54px;
+             color: #000000;
+             text-align: center;
+        }
+    }
+
+    .adds{
+        margin: 40px 125px;
+        @include display_wra();
+        box-sizing: border-box;
+        .adds_item{
+            width: 200px;
+            padding: 30px 0 30px 10px;
+            h3{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .mens_wear{
+        @include display_wra();
+        margin-bottom: 115px;
+        .block_one{
+            width: 24%;
+        }
+    }
+}
+
+.brend_banner{
+    margin-bottom: 110px;
+    .inner_brend-banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 50px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .left-side{
+        width: 50%;
+    }
+    .right-side{
+        width: 49%;
+    }
+}
+
+.dress{
+    .place_name{
+        margin-bottom: 40px;
+        
+        h1 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            line-height: 54px;
+            color: #000000;
+            text-align: center;
+        }
+    }
+    .inner_dress{
+         @include display_wra();
+         margin-bottom: 115px;
+
+         .block_one {
+             width: 24%;
+         }
+    }
+}
+
+.button-again{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    button{
+        display: flex;
+        width: 179px;
+        height: 33px;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #003466;
+        box-sizing: border-box;
+        span{
+            display: block;
+            padding-left: 12px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #003466;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@media screen and (max-width:500px) {
+    .footer {
+        background-color: #032546;
+
+        .footer-top {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px 0 30px 0;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .footer_one {
+                .footer-title {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    font-feature-settings: 'liga'off;
+                    color: #D9DBE1;
+                    margin-top: 15px;
+                }
+
+                &.alone {
+                    width: 48%;
+                    .logo_image{
+                            width: 154px;
+                            height: 31px;
+                            object-fit: contain;
+                    }
+                }
+
+                &.social_media{
+                    width: 48%;
+                }
+
+                &.alone_two {
+                    width: 48%;
+                }
+
+                span {
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    margin-bottom: 14px;
+                    display: block;
+                }
+
+                li {
+                    a {
+                        font-size: 12px;
+                    }
+
+                    &.center{
+                        align-items: center;
+                    }
+                }
+
+                &.alone {
+
+                    img {
+                        padding-right: 8px;
+                        width: 20px;
+                        object-fit: contain;
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    span{
+                        font-size: 16px;
+                    }
+                    li {
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 0;
+                        margin-right: 15px;
+                        a {
+                            margin-top: 0 !important;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 80%;
+                                height: 80%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+
+                .payment {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        width: 46%;
+                        margin-right: 0 !important;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .top_btn {
+                display: none;
+            }
+        }
+
+        .footer-bottom {
+            padding: 24px 0 15px 0;
+            .copyright {
+                font-size: 8px;
+            }
+        }
+    }
+}

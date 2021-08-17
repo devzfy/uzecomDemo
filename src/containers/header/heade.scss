@@ -1,0 +1,235 @@
+@mixin display_bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.page_header{
+    background-color: #003466;
+    padding: 32px 0;
+    .header_inner {
+        @include display_bet();
+        .dropdawn_name{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            cursor: pointer;
+            &__two{
+                color: #666666;
+                cursor: pointer;
+            }
+        }
+        .dropdawn_place{
+            @include display_bet();
+            .for_men{
+                position: relative;
+                margin-right: 20px;
+                
+                .open_drop{
+                    display: none;
+                    padding: 10px 16px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    position: absolute;
+                    top: 64px;
+                    z-index: 100;
+                    left: 0;
+                    &.active {
+                            display: block;
+                    }
+                    .li_item{
+                        display: block;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 180%;
+                        color: #666666;
+                        width: 100%;
+                        border-bottom: 1px solid #f1eded;
+                        width: 200px;
+                        box-sizing: border-box;
+                        .open_drop_two{
+                            display: none;
+                            margin-left: 10px;
+                            &.active{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .single_item{
+                    display: flex;
+                    align-items: center;
+                    .dropdawn_name{
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+        .logo_place{
+            margin-left: 23px;
+        }
+        .mini_place{
+            .connect_place{
+                @include display_bet();
+                li{
+                    margin: 0 10px;
+                }
+                .bla_bla{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    transition: 0.3s;
+                    
+                    .search_input {
+                        width: 38px;
+                        height: 38px;
+                        border: none;
+                        outline: none;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        &::placeholder{
+                            color: transparent;
+                        }
+                    }
+
+                    .span_search{
+                        right: 10px;
+                        top: 10px;
+                        position: absolute;
+                        .search_img {
+                            fill: #fff;
+                            width: 16px;
+                            height: 16px;
+                            right: 10px;
+                        }
+                    }
+                    &.active {
+                        transition: 0.3s;
+                        .span_search{
+                            top: 5px;
+                            right: 12px;
+                            width: 28px;
+                            height: 28px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background: #FFFFFF;
+                            border: 1px solid #FFFFFF;
+                            box-sizing: border-box;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                            .search_img {
+                                fill: #000;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                        
+                        .search_input {
+                            width: 172px;
+                            border-radius: 33px;
+                            padding: 0 10px;
+                            background-color: #fff;
+                            &::placeholder{
+                                font-style: italic;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: #666666;
+                            }
+                        }
+
+                        
+                    }
+                }
+                
+                .korzinka{
+                    width: 38px;
+                    height: 38px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                }
+
+                .user{
+                    width: 38px;
+                    height: 38px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                }
+
+                .language{
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    color: #fff;
+                    height: 20px;
+
+                    .option{
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+
+                .avatar_place{
+                    position: relative;
+                    .open_drop{
+                        display: none;
+                        position: absolute;
+                        width: 200px;
+                        background-color: #fff;
+                        left: -90px;
+                        top: 73px;
+                        z-index: 100;
+                        padding-bottom: 9px;
+                        &.active{
+                            display: block;
+                        }
+                        .avatare{
+                            padding: 9px 16px;
+                            display: flex;
+                            align-items: center;
+                            background-color: #E9E4E4;
+                            a{
+                                margin-left: 11px;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #565656;
+                            }
+                        }
+                        .li_item{
+                            display: block;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #565656;
+                            margin-top: 9px;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                .humberger{
+                    display: none;
+                }
+            }
+        }
+    }
+}

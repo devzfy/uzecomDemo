@@ -1,0 +1,363 @@
+.banner_single{
+    width: 100%;
+    min-height: 434px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        background-position: center;
+        background-size: cover;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.inner_banner{
+    margin-top: 87px;
+    margin-bottom: 100px;
+    .page_name{
+        margin-bottom: 37px;
+        .page_name_title{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+
+    .page_products {
+        .product_full--info{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .left_part{
+                width: 45%;
+                padding-right: 25px;
+                display: flex;
+                align-items: center;
+                .main_img{
+                    padding: 64px 87px 64px 65px;
+                    background: #F1EDED;
+                    max-width: 430px;
+                    max-height: 430px;
+                    img{
+                        width: 278px;
+                        height: 302px;
+                    }
+                }
+
+                .mini-images{
+                    height: 100%;
+                    button{
+                        width: 82px;
+                        height: 89px;
+                        background: #F1EDED;
+                        margin-right: 10px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .right_part{
+                width: 55%;
+                padding-left: 25px;
+
+                .product_brend{
+                    margin-bottom: 8px;
+                    .brend_name{
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                        color: #000000
+                    }
+                }
+
+                .product_informatio{
+                    .top_info{
+                        border-bottom: 1px solid #e5e5e5;
+                        display: flex;
+                        align-items: flex-start;
+                        padding-bottom: 10px;
+                        justify-content: space-between;
+                        .left_info{
+                            .prod_id{
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 100%;
+                                color: #000000;
+                                margin-bottom: 10px;
+                                display: flex;
+                                .id_numb{
+                                    padding-left: 10px;
+                                    display: block;
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 100%;
+                                    color: #666666;
+                                }
+                            }
+                        }
+                    }
+
+                    .prod_over{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #666666;
+                        padding-top: 10px;
+                        padding-bottom: 20px;
+                    }
+
+                    .prod_price_stock{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+
+                        .product_price {
+                            display: flex;
+                            align-items: center;
+                            padding: 12px 20px;
+                            border: 1px solid #003466;
+                            .prod_sena {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 22px;
+                                line-height: 100%;
+                                color: #003466;
+
+                                &.alone{
+                                    font-size: 28px;
+                                    padding-left: 10px;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .product_number{
+                            display: flex;
+                            align-items: center;
+                            .stock_numb{
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 100%;
+                                color: #000000;
+                                display: block;
+                                padding-right: 10px;
+                            }
+                            .minu_plus {
+                                max-height: 50px;
+                                display: flex;
+                                align-items: center;
+                                border-top: 1px solid #C4C4C4;
+                                border-bottom: 1px solid #C4C4C4;
+
+                                .minus {
+                                    padding: 0 14px;
+                                    background-color: #EDE9E9 !important;
+                                    height: 50px;
+                                }
+                                .number{
+                                    display: block;
+                                    padding: 18px 29px 14px 28px;
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 100%;
+                                    color: #000000;
+                                    height: 50px;
+                                }
+
+                                .plus{
+                                    padding: 0 13px 0 13px;
+                                    display: block;
+                                    height: 50px;
+                                    background-color: #003466;
+                                }
+                            }
+                        }
+                    }
+                    .product_color{
+                        .color{
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 22px;
+                            line-height: 100%;
+                            color: #003466;
+                            margin-bottom: 10px;
+                            margin-top: 0 !important;
+                        }
+
+                        &.alone_btns{
+                            .radio_btns{
+                                input:checked::after{
+                                        background-color: green;
+                                }
+                                input:checked::before{
+                                        border-color: green;
+                                }
+
+                                label{
+                                    padding-top: 4px;
+                                }
+                            }
+                        }
+
+                        .radio_btns{
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 10px;
+                             input {
+                                 width: 20px;
+                                 height: 20px;
+                                 appearance: none;
+                                 cursor: pointer;
+                                 margin-right: 10px;
+                                 position: relative;
+
+                                 &.radio_one:checked::before {
+                                     border-color: #779CD1;
+                                 }
+
+                                 &.radio_two:checked::before {
+                                     border-color: #808080;
+                                 }
+
+                                 &.radio_thre:checked::before {
+                                     border-color: #3F679D;
+                                     ;
+                                 }
+
+                                 &.radio_four:checked::before {
+                                     border-color: #FFFF00;
+                                 }
+
+                                 &.radio_one {
+                                     &::after {
+                                         background-color: #779CD1;
+                                     }
+                                 }
+
+                                 &.radio_two {
+                                     &::after {
+                                         background-color: #808080;
+                                     }
+                                 }
+
+                                 &.radio_thre {
+                                     &::after {
+                                         background-color: #3F679D;
+                                     }
+                                 }
+
+                                 &.radio_four {
+                                     &::after {
+                                         background-color: #FFFF00;
+                                     }
+                                 }
+
+                                 &::before {
+                                     position: absolute;
+                                     content: '';
+                                     border-radius: 50%;
+                                     border: 2px solid #F1eded;
+                                     width: 19px;
+                                     height: 19px;
+                                     top: 0;
+                                     right: 0;
+                                     left: 0;
+                                     right: 0;
+                                     margin: auto
+                                 }
+
+                                 &::after {
+                                     position: absolute;
+                                     content: '';
+                                     width: 13px;
+                                     height: 13px;
+                                     top: 3px;
+                                     bottom: 0;
+                                     left: 3px;
+                                     right: 0;
+                                     margin: auto;
+                                     border-radius: 50%;
+                                 }
+                             }
+
+                            label{
+                                padding:0  10px 0 0;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 100%;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .shop_btn{
+                        button{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 100%;
+                            color: #FFFFFF;
+                            padding: 16px 32px;
+                            background: #003466;
+                        }
+                    }
+                }
+            }
+        }
+        .you_may{
+            .top_may{
+                h1{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 44px;
+                    line-height: 54px;
+                    text-align: center;
+                    color: #000000;
+                }
+                margin-bottom: 40px;
+                margin-top: 100px;
+            }
+
+            .likes_products{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}

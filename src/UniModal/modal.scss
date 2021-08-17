@@ -1,0 +1,142 @@
+.univ_modal{
+    .modal_one, .modal_two, .modal_thre{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 101;
+        top: 0;
+        form{
+            max-width: 342px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 49px 20px 20px 20px;
+            position: absolute;
+
+            &.form_one{
+                max-height: 280px;
+            }
+            &.form_two {
+                max-height: 280px;
+            }
+            &.form_thre {
+                max-height: 380px;
+            }
+        }
+        input{
+            display: block;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #FFFFFF;
+            border: 1px solid #003466;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            padding: 12px 16px;
+            &::placeholder{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: #003466;
+            }
+        }
+
+        button{
+            display: block;
+            background: #003466;
+            border: 1px solid #003466;
+            box-sizing: border-box;
+            border-radius: 3px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            width: 100%;
+            color: #FFFFFF;
+            padding: 12px 0;
+            cursor: pointer;
+
+            &.two_btn{
+                margin-bottom: 15px;
+            }
+
+            
+        }
+
+        label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #003466;
+        }
+    }
+
+    .modal_two {
+       display: none;
+       &.active{
+           display: block;
+       }
+    }
+
+    .modal_one {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    .modal_thre {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .univ_modal{
+        .modal_one, .modal_two, .modal_thre{
+            form{
+                max-width: 80%;
+                padding: 20px 10px;
+
+                 &.form_one {
+                     max-height: 222px;
+                 }
+
+                 &.form_two {
+                     max-height: 222px;
+                 }
+
+                 &.form_thre {
+                     max-height: 315px;
+                 }
+            }
+
+            input{
+                padding: 8px 12px;
+            }
+
+            button{
+                padding: 8px 0;
+                font-size: 12px;
+            }
+        }
+    }
+}

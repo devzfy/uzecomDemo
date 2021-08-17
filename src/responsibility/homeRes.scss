@@ -1,0 +1,145 @@
+@media screen and (max-width: 500px) {
+    .hero-page{
+        .slick-slider {
+            .slick-arrow {
+                width: 15px;
+                height: 15px;
+
+                &::before {
+                    top: 5px;
+                    width: 6px !important;
+                    height: 6px !important;
+                }
+
+                &.slick-prev {
+                    left: 10px;
+                }
+
+                &.slick-next {
+                    right: 10px;
+                }
+            }
+        }
+    }
+    .brends{
+        margin: 50px 0 60px 0 !important;
+        .slick-slider {
+            .slick-list {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+
+            .slick-arrow {
+                position: relative;
+                width: 13px;
+                height: 22px;
+                &.slick-prev {
+                    position: absolute;
+                    left: -10px;
+                    z-index: 10;
+                    transform: rotate(180deg);
+
+                    &::before {
+                        top: 30px !important;
+                    }
+                }
+
+                &.slick-next {
+                    position: absolute;
+                    right: -10px;
+                    &::before {
+                        top: -10px !important;
+                    }
+                }
+            }
+        }
+        .brend_logo{
+            img{
+                width: 52px;
+                height: 52px;
+            }
+            .brend_name{
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
+
+        .place_name{
+            margin-bottom: 30px;
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .new_collection{
+        .place_name{
+            h1{
+                font-size: 26px;
+            }
+        }
+        .adds{
+            flex-wrap: wrap;
+            margin: 40px 0;
+            .adds_item{
+                width: 48%;
+                padding: 23px 0 23px 8px;
+                margin-bottom: 20px;
+                h3{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .mens_wear{
+            flex-wrap: wrap;
+            display: flex;
+            margin-bottom: 60px;
+            width: 100%;
+            .block_one{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .brend_banner{
+        margin-bottom: 60px !important;
+        .container{
+            padding: 0;
+        }
+        .inner_brend-banner{
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .left-side{
+            width: 100%;
+        }
+        .right-side {
+            width: 100%;
+        }
+    }
+
+    .dress{
+        .place_name{
+            margin-bottom: 40px;
+            h1{
+                font-size: 26px;
+            }
+        }
+
+        .inner_dress{
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+            .block_one{
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .button-again {
+        display: none;
+    }
+}
